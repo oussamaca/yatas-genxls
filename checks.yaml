@@ -1,0 +1,185 @@
+checks:
+  AWS_ACM_001:
+    category: "ACM"
+    reco: "Renew invalid ACM certificates"
+  AWS_ACM_002:
+    category: "ACM"
+    reco: "Renew nearly expired certificates (in less than 90 days)"
+  AWS_ACM_003:
+    category: "ACM"
+    reco: "Remove unused ACM certificates"
+  AWS_ASG_001:
+    category: "Autoscaling"
+    reco: "Configure Autoscaling maximum capacity below 80%"
+  AWS_ASG_002:
+    category: "Autoscaling"
+    reco: "Configure Autoscaling group in two availability zones"
+  AWS_APG_001:
+    category: "ApiGateway"
+    reco: "Export ApiGateways logs to CloudWatch"
+  AWS_APG_002:
+    category: "ApiGateway"
+    reco: "Protect ApiGateways with AWS WAF"
+  AWS_APG_003:
+    category: "ApiGateway"
+    reco: "Enable tracing on ApiGateways"
+  AWS_BAK_001:
+    category: "EC2 Snapshot"
+    reco: "Enable encrypt on EC2 snapshot"
+  AWS_BAK_002:
+    category: "EC2 Snapshot"
+    reco: "Make daily snapshot for EC2 volumes"
+  AWS_CFT_001:
+    category: "CloudFront"
+    reco: "Enforce TLS 1.2 at least on CloudFronts"
+  AWS_CFT_002:
+    category: "CloudFront"
+    reco: "Enforce HTTPS on CloudFronts"
+  AWS_CFT_003:
+    category: "CloudFront"
+    reco: "Enable Standard logging on CloudFronts"
+  AWS_CFT_004:
+    category: "CloudFront"
+    reco: "Enable Cookies logging on CloudFronts"
+  AWS_CFT_005:
+    category: "CloudFront"
+    reco: "Protect CloudFronts with AWS WAF"
+  AWS_COG_001:
+    category: "Cognito"
+    reco: "Disallows unauthenticated users on Cognito"
+  AWS_DYN_001:
+    category: "DynamoDB"
+    reco: "Enable encryption on DynamoDB tables"
+  AWS_DYN_002:
+    category: "DynamoDB"
+    reco: "Enable PITR on DynamoDB tables"
+  AWS_EC2_001:
+    category: "EC2"
+    reco: "Limit public IP on EC2 instances"
+  AWS_EC2_002:
+    category: "EC2"
+    reco: "Enable monitoring on EC2 instances"
+  AWS_ECR_001:
+    category: "ECR"
+    reco: "Enable scan on image push"
+  AWS_ECR_002:
+    category: "ECR"
+    reco: "Enable encryption on ECRs"
+  AWS_ECR_003:
+    category: "ECR"
+    reco: "Set ECRs tags immutables"
+  AWS_EKS_001:
+    category: "EKS"
+    reco: "Enable logging on EKS clusters "
+  AWS_EKS_002:
+    category: "EKS"
+    reco: "Set EKS clusters endpoint private"
+  AWS_ELB_001:
+    category: "Load Balancer"
+    reco: "Enable access logs on Load Balancers"
+  AWS_GDT_001:
+    category: "Intrusion Detection"
+    reco: "Enable and configure GuardDuty for intrusion detection"
+  AWS_IAM_001:
+    category: "IAM"
+    reco: "Enforce 2FA on AWS account"
+  AWS_IAM_002:
+    category: "IAM"
+    reco: "Rotate Access Keys every 90 days"
+  AWS_IAM_003:
+    category: "IAM"
+    reco: "Follow principle of least privilege for IAM Users"
+  AWS_IAM_004:
+    category: "IAM"
+    reco: "Follow principle of least privilege for IAM Roles"
+  AWS_IAM_005:
+    category: "IAM"
+    reco: "Remove unused IAM users"
+  AWS_LMD_001:
+    category: "Lambda"
+    reco: "Configure Lambda functions inside a VPC"
+  AWS_LMD_002:
+    category: "Lambda"
+    reco: "Configure Security Group for Lambda functions"
+  AWS_LMD_003:
+    category: "Lambda"
+    reco: "Fix errors on Lambda functions"
+  AWS_RDS_001:
+    category: "RDS"
+    reco: "Enable encryption on RDS databases"
+  AWS_RDS_002:
+    category: "RDS"
+    reco: "Enable PITR to automatically backup RDS databases"
+  AWS_RDS_003:
+    category: "RDS"
+    reco: "Enable minor versions automatic update on RDS databases"
+  AWS_RDS_004:
+    category: "RDS"
+    reco: "Disallow public access on RDS databases"
+  AWS_RDS_005:
+    category: "RDS"
+    reco: "Export RDS logs to CloudWatch"
+  AWS_RDS_006:
+    category: "RDS"
+    reco: "Enable deletion protection on RDS databases"
+  AWS_RDS_007:
+    category: "RDS"
+    reco: "Enable minor versions automatic update on Aurora Clusters"
+  AWS_RDS_008:
+    category: "RDS"
+    reco: "Enable PITR to automatically backup Aurora RDS"
+  AWS_RDS_009:
+    category: "RDS"
+    reco: "Enable deletion protection on Aurora RDS"
+  AWS_RDS_010:
+    category: "RDS"
+    reco: "Enable encryption on Aurora RDS"
+  AWS_RDS_011:
+    category: "RDS"
+    reco: "Export Aurora RDS logs to CloudWatch"
+  AWS_RDS_012:
+    category: "RDS"
+    reco: "Disallow public access on Aurora RDS"
+  AWS_S3_001:
+    category: "Bucket"
+    reco: "Enable encryption on S3 buckets"
+  AWS_S3_002:
+    category: "Bucket"
+    reco: "Create S3 buckets in only on zone"
+  AWS_S3_003:
+    category: "Bucket"
+    reco: "Enable versioning on S3 buckets"
+  AWS_S3_004:
+    category: "Bucket"
+    reco: "Set retention policy on S3 buckets"
+  AWS_S3_005:
+    category: "Bucket"
+    reco: "Enable public access block on S3 buckets"
+  AWS_VOL_001:
+    category: "Volume"
+    reco: "Enable encryption on EC2 volumes"
+  AWS_VOL_002:
+    category: "Volume"
+    reco: "Use GP3 for EC2 volumes"
+  AWS_VOL_003:
+    category: "Volume"
+    reco: "Create snapshot for EC2 volumes"
+  AWS_VOL_004:
+    category: "Volume"
+    reco: "Remove unused EC2 volumes"
+  AWS_VPC_001:
+    category: "VPC"
+    reco: "Define VPC CIDRs bigger than /20"
+  AWS_VPC_002:
+    category: "VPC"
+    reco: "Use only one VPC per Account"
+  AWS_VPC_003:
+    category: "VPC"
+    reco: "Use only one gateway per VPC"
+  AWS_VPC_004:
+    category: "VPC"
+    reco: "Enable VPC Flow Logs"
+  AWS_VPC_005:
+    category: "VPC"
+    reco: "Create at least 2 subnets per VPC"
+  
